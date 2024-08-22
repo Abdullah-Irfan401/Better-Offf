@@ -1,9 +1,11 @@
+import NavBar from "./components/navbar"
+
 function App() {
 
 
   return (
     <div>
-      Better Off
+      <NavBar />
     </div>
   )
 }
