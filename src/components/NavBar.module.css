@@ -58,10 +58,12 @@ ul a {
     display: flex;
     align-items: center;
     color: black;
+    font-weight: 600;
 }
 
 ul li a strong {
     font-weight: bold;
+    font-size: 1.3rem;
     
 }
 
