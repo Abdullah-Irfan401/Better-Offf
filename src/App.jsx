@@ -1,5 +1,6 @@
 import NavBar from "./components/navbar"
 
+
 function App() {
 
 
