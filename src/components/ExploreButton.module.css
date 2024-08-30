@@ -1,0 +1,33 @@
+
+.customButton {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333; 
+    border-bottom: 1.5px solid #333; 
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .customButton:hover {
+    color: #555; 
+    border-color: #555;
+  }
+  
+  .customButton svg {
+    margin-left: 15px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .customButton:hover svg {
+    transform: translateX(10px); 
+  }
+  
+/* 
+  @media(max-width:360px){
+    .customButton{
+      font-size: 10px;
+    }
+  } */

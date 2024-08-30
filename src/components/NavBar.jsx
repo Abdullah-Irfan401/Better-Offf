@@ -47,7 +47,7 @@ function NavBar() {
         <div>
             <nav>
                 <ul className={`${Styles.sidebar} ${showSidebar ? Styles.show : ''}`}>
-                  <li  onClick={toggleSidebar} ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                  <li  onClick={toggleSidebar} className={Styles.sidemenuebutton} >Menu</li>
                   <hr className={Styles.sidebarhr}></hr>
                   <li><a href="#">Overview</a></li>
                   <hr className={Styles.sidebarhr}></hr>
@@ -64,14 +64,13 @@ function NavBar() {
                   <li className={Styles.hideOnMobile}><a href="#">Work</a></li>
                   <li className={Styles.hideOnMobile}><a href="#">Feed</a></li>
                   </div>
-                  <li className={Styles.menubutton}  onClick={toggleSidebar}  ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                  <li className={Styles.menubutton}  onClick={toggleSidebar}  >Menu</li>
                   <li className={Styles.hideOnMobile}><a href="#">Pricing</a></li>
                 </ul>
             
             </nav>
 
-            <h1>BETTER OFF</h1>
-            <h2>BETTER OFF</h2>
+        
 
         </div>
     )
