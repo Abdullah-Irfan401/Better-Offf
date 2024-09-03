@@ -12,6 +12,7 @@
   }
 
   .navbar {
+    overflow-x: hidden;
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     transition: background-color 0.3s ease;
   }
 
@@ -45,12 +46,13 @@ ul .menulink {
 
 
 ul a {
+   position: relative;
     height: 100%;
     padding: 0  0px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: #1e1e1e;
     font-weight: 600;
     font-size: 2.5rem;
 }
@@ -58,7 +60,6 @@ ul a {
 ul li a strong {
     font-weight: bold;
     font-size: 3.2rem;
-    
 }
 
 .menubutton{
@@ -67,8 +68,23 @@ ul li a strong {
     cursor: pointer;
 }
 
-nav a:hover{
-  text-decoration: underline;
+ .hideOnMobile a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+ .hideOnMobile a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
   /* nav ul{
     height: 50px;
@@ -103,14 +119,14 @@ nav a:hover{
     height: 100vh;
     width: 100%;
     background-color: #1e1e1e;
-    backdrop-filter: blur(12px);
+    /* backdrop-filter: blur(12px); */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
     display: none ;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    z-index: 1001;
+    z-index: 1002;
   }
 
   .show{
