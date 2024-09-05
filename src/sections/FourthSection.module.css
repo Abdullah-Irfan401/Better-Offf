@@ -1,0 +1,61 @@
+@font-face {
+    font-family: pp;
+    src: url(./PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    font-family: founders;
+    src: url(./founders-grotesk-x.cd2d353.woff2);
+}
+
+.main{
+    background-color: #1E1E1E;
+}
+
+.FourthSection{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.bo_03{
+    color: #FFFFFF;
+    /* display: flex; */
+    /* align-items: flex-start; */
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-family: pp;
+    padding-top: 3rem;
+}
+
+.bo_03 h1{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: pp;
+    /* display: flex; */
+    margin-left: 55rem;
+    margin-top: -6rem;
+}
+
+.heading{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: pp;
+    display: flex;
+    margin-left: 55rem;
+    margin-top: -6rem;
+    
+}
+
+.services{
+    font-size: 20rem;
+    color: #FFFFFF;
+    font-family: founders;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}

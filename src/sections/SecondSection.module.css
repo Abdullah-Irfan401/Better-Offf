@@ -1,0 +1,67 @@
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url(./PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    
+    font-family: founders;
+    src: url(./founders-grotesk-x.cd2d353.woff2);
+}
+
+.heading{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 2.2rem;
+    margin-top: 15rem;
+    margin-left: 3rem;
+    color: #1e1e1e;
+    font-family: PPNeueMontreal;
+}
+
+hr{
+    border: 0.001rem solid #8f8f8f;
+    margin-top: 10rem;
+}
+
+.bo_01{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    gap: 95rem;
+    margin-top: 3rem;
+    flex-shrink: initial;
+    text-transform: uppercase;
+    color: #1E1E1E;
+}
+
+.wrapper h4{
+    color: #1E1E1E;
+}
+.wrapper h5{
+    color: #949690;
+    font-size: 2rem;
+}
+
+.wrapper{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+    margin-left: 66rem;
+    margin-top: -2rem;
+    /* margin-left: 270rem; */
+    padding-bottom: 22rem;
+}
+
+
+
+
+
+
+
+
+
+

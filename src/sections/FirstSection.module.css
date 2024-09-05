@@ -1,11 +1,14 @@
 @font-face {
-  font-family: pp;
-  src: url(./PPNeueMontreal-Medium.88ee7c9.woff2);
+  font-family: PPNeueMontreal;
+    src: url(./PPNeueMontreal-Book.otf);
   font-family: subscribe;
   src: url(./founders-grotesk-x.cd2d353.woff2);
 }
 
 .paragragh {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
   position: relative;
   margin-top: 10rem;
   margin-left: 3rem;
@@ -14,6 +17,9 @@
 }
 
 .heading {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
   position: relative;
   margin-left: 48rem;
   margin-top: -15rem;
@@ -21,20 +27,18 @@
   width: 55rem;
   font-size: 1.44rem;
   color: #1e1e1e;
-  font-family: pp;
+  font-family: PPNeueMontreal;
 }
 
 .move {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
 .subscribe {
   display: flex;
-}
-.vhbjs {
-  margin-top: 150rem;
 }
 
 .subscribe h1 {

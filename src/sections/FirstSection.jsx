@@ -137,7 +137,7 @@ function FirstSection() {
                 
 
             
-            <h1 className={Styles.vhbjs}>hvbajks</h1>
+           
         </>
     )
 }
