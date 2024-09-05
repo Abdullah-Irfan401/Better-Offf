@@ -52,12 +52,13 @@ ul a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #1e1e1e;
+    color: #000;
     font-weight: 600;
-    font-size: 2.5rem;
-}
-
-ul li a strong {
+    font-size: 2rem;
+  }
+  
+  ul li a strong {
+  color: #000;
     font-weight: bold;
     font-size: 3.2rem;
 }
