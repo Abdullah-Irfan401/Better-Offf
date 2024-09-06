@@ -1,19 +1,23 @@
-// import { gsap } from "gsap";
-// import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
     
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
-// gsap.registerPlugin(useGSAP,ScrollTrigger);
+gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 
 import Styles from "./SecondSection.module.css"
-// import { useRef } from "react";
+import { useRef } from "react";
 
 
 function SecondSection() {
 
-    // const main = useRef()
+    const line1 = useRef()
+    const line2 = useRef()
+    const line3 = useRef()
+    const line4 = useRef()
+    const text = useRef()
 
 
     // useGSAP(() => {
@@ -33,24 +37,85 @@ function SecondSection() {
     //     });
     //   });
 
+    useGSAP(() => {
+        gsap.to(line1.current ,{
+            y: -15,
+            ease: "power4.out",
+            delay: .2,
+            scrollTrigger: {
+                trigger:text.current,
+                // markers: true,
+            }
+            
+        })
+    })
+
+    useGSAP(() => {
+        gsap.to(line2.current ,{
+            y: -15,
+            ease: "power4.out",
+            delay: .4,
+            scrollTrigger: {
+                trigger:text.current,
+                // markers: true,
+            }
+            
+        })
+    })
+
+    useGSAP(() => {
+        gsap.to(line3.current ,{
+            y: -15,
+            ease: "power4.out",
+            delay: .6,
+            scrollTrigger: {
+                trigger:text.current,
+                // markers: true,
+            }
+            
+        })
+    })
+
+    useGSAP(() => {
+        gsap.to(line4.current ,{
+            y: -15,
+            ease: "power4.out",
+            delay: .8,
+            scrollTrigger: {
+                trigger:text.current,
+                // markers: true,
+            }
+            
+        })
+    })
+
     return (
         <div   >
             <div className={Styles.heading}>    
-                <h1><span>No more inflated agency fees. No more flaky </span> <br />
-                   <span> freelancers. No more salaried employees to</span> <br />
-                    <span>manage. Just top-tier creative that’s easy, </span> <br />
-                  <span>  high velocity, and sensibly priced.</span>
-                </h1>
+                <div className={Styles.text} ref={text} >
 
-                    <br />
-                    <br />
-                    
-                    
+                {/* <div className={Styles.line} ref={line1} ><span>No more inflated agency fees. No more flaky </span> <br /></div>
+                    <div className={Styles.line} ref={line2} ><span> freelancers. No more salaried employees to</span> <br /></div>
+                    <div className={Styles.line} ref={line3} > <span>manage. Just top-tier creative that’s easy, </span> <br /></div>
+                    <div className={Styles.line} ref={line4} ><span>  high velocity, and sensibly priced.</span></div> */}
 
-                <h1>Get transformational talent and capabilities <br />
-                    in a turnkey platform that promises your <br />
-                    brand will be Better Off®.
-                </h1>
+                    <h1 ><span  >No more inflated agency fees. No more flaky </span> <br />
+                        <span> freelancers. No more salaried employees to</span> <br />
+                        <span>manage. Just top-tier creative that’s easy, </span> <br />
+                        <span>  high velocity, and sensibly priced.</span>
+                    </h1>
+
+                        <br />
+                        <br />
+                        
+                        
+
+                    <h1 className={Styles.hh} >Get transformational talent and capabilities <br />
+                        in a turnkey platform that promises your <br />
+                        brand will be Better Off®.
+                    </h1>
+                </div>
+                
 
                 <hr />
 

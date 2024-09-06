@@ -29,7 +29,7 @@ function FirstSection() {
         gsap.to( move1.current, {
             transform: "translateX(-100%)",
             repeat: -1,
-            duration: 8,
+            duration: 20,
             ease: "none"
             
             
@@ -39,7 +39,7 @@ function FirstSection() {
         gsap.to( move2.current, {
             transform: "translateX(-100%)",
             repeat: -1,
-            duration: 8,
+            duration: 20,
             ease: "none"
             
             
@@ -51,7 +51,7 @@ function FirstSection() {
         gsap.to( move3.current, {
             transform: "translateX(-100%)",
             repeat: -1,
-            duration: 8,
+            duration: 20,
             ease: "none"
             // ease: "inOut",
             
@@ -61,7 +61,7 @@ function FirstSection() {
         gsap.to( move4.current, {
             transform: "translateX(-100%)",
             repeat: -1,
-            duration: 8,
+            duration: 20,
             ease: "none"
             // ease: "inOut",
             
@@ -71,7 +71,7 @@ function FirstSection() {
         gsap.to( move5.current, {
             transform: "translateX(-100%)",
             repeat: -1,
-            duration: 8,
+            duration: 20,
             ease: "none"
             // ease: "inOut",
             
@@ -101,16 +101,18 @@ function FirstSection() {
 
 
     return (
-        <>
-            <div className={Styles.paragragh } >
-                <p>Pick a plan, submit a job request,<br /> and your project will kickoff within <br /> 24 hours.</p>
-                <br />
-                <ExploreButton />
-            </div>
-            <div className={Styles.heading} >
-                <h1>Premium quality creative at lean rates <br />
-                    for growing businesses. Packaged as <br />
-                    subscriptions or bundled projects.</h1>
+        <> <div className={Styles.main} >
+            <div className={Styles.text} >
+                <div className={Styles.paragragh } >
+                    <p>Pick a plan, submit a job request,<br /> and your project will kickoff within <br /> 24 hours.</p>
+                    <br />
+                    <ExploreButton />
+                </div>
+                <div className={Styles.heading} >
+                    <h1>Premium quality creative at lean rates <br />
+                        for growing businesses. Packaged as <br />
+                        subscriptions or bundled projects.</h1>
+                </div>
             </div>
             <div className={Styles.subscribe} ref={Subscribe}  >
                 <div className={Styles.move} ref={move1} >
@@ -138,6 +140,7 @@ function FirstSection() {
 
             
            
+        </div>
         </>
     )
 }

@@ -5,26 +5,34 @@
   src: url(./founders-grotesk-x.cd2d353.woff2);
 }
 
-.paragragh {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  position: relative;
-  margin-top: 10rem;
-  margin-left: 3rem;
-  font-size: 2rem;
-  color: #1e1e1e;
+
+.main{
+  background-color: #E5E7DF;
 }
 
-.heading {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+.paragragh {
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10rem;
+    margin-left: -90rem;
+    font-size: 2rem;
+    color: #1e1e1e;
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
   position: relative;
-  margin-left: 48rem;
-  margin-top: -15rem;
-  height: 20rem;
-  width: 55rem;
+  /* margin-left: 48rem; */
+  margin-left: 270rem;
+  margin-top: -28rem;
+  /* height: 20rem;
+  width: 55rem; */
   font-size: 1.44rem;
   color: #1e1e1e;
   font-family: PPNeueMontreal;
@@ -39,6 +47,7 @@
 
 .subscribe {
   display: flex;
+  margin-top: -23rem;
 }
 
 .subscribe h1 {
@@ -50,17 +59,20 @@
 
 .subscribe img {
   width: 26.5rem;
-  margin-top: 4rem;
+  height: 19rem;
+  margin-top: 23rem;
   cursor: default;
 }
 
 @media (max-width: 1400px) {
   .heading {
-    margin-left: 80rem;
-    margin-top: -18rem;
+    margin-left: 55rem;
+    margin-top: -34rem;
+    font-size: 2.3rem;
   }
   .paragragh {
-    font-size: 2.4rem;
+    margin-left: -100rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 1350px) {

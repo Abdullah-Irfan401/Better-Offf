@@ -9,7 +9,17 @@
 }
 
 .main{
+    position: relative;
     background-color: #1E1E1E;
+    margin-top: -93rem;
+    padding-bottom:0rem;
+    z-index: 200;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .FourthSection{
@@ -46,8 +56,8 @@
     color: #FFFFFF;
     font-family: pp;
     display: flex;
-    margin-left: 55rem;
-    margin-top: -6rem;
+    margin-left: 23rem;
+    margin-top: -17rem;
     
 }
 
@@ -58,4 +68,44 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    margin-top: -12rem;
+}
+
+.parent_container {
+    display: flex;
+    justify-content: center; 
+    margin-left: 30rem;
+    /* align-items: center;  */
+  }
+
+.accordian{
+    font-size: 2rem;
+    width: 70%;
+    font-family: pp;    
+    padding-bottom: 20rem;
+    
+}
+
+
+.accordian h4{
+    color: #FFFFFF;
+    padding-bottom: 2rem;
+
+}
+
+.bo_04{
+    /* margin-left: 3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-family: pp;
+    color: #fff;
+}
+
+.bo_04 h5{
+    margin-left: 35rem;
+    font-size: 2.1rem;
 }

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: pp;
+    src: url(./PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    font-family: founders;
+    src: url(./founders-grotesk-x.cd2d353.woff2);
+}
+
+
+.main{
+    background-color: #1E1E1E;
+    padding-top:1rem;
+    margin-top: -87rem;
+}
+
+.bo_04{
+    /* margin-left: 3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-family: pp;
+    color: #fff;
+}
+
+.bo_04 h5{
+    margin-left: 35rem;
+    font-size: 2.1rem;
+}
+
