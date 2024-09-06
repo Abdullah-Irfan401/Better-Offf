@@ -3,6 +3,9 @@ import FirstSection from "./sections/FirstSection"
 import SecondSection from "./sections/SecondSection"
 import ThirdSection from "./sections/ThirdSection"
 import FourthSection from "./sections/FourthSection"
+// import FifthSection from "./sections/FifthSection"
+import ImgSection from "./sections/ImgSection"
+import SixthSection from "./sections/SixthSection"
 
 
 
@@ -15,9 +18,15 @@ function App() {
       <FirstSection  />  
       <SecondSection />
       <ThirdSection />  
-      <FourthSection />
+      <FourthSection /> 
+      {/* <FifthSection /> */}
+      <ImgSection /> 
+      <SixthSection />
     </div>
   )
 }
 
 export default App
+
+
+      

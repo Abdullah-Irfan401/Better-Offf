@@ -20,6 +20,53 @@
     font-family: PPNeueMontreal;
 }
 
+.text{
+    margin-left: -40rem;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    gap: -10rem;
+    padding-top:-10rem;
+}
+
+/* .text .line span{
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 4.5rem;
+    gap: -10rem;
+    padding-top:-10rem;
+    line-height: 1;
+} */
+
+/* .container{
+    width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .line{
+      width: 80%;
+      height: 70px;
+      position: relative;
+      overflow: hidden;
+      span{
+        position: absolute;
+        font-size: 9.5rem;
+        line-height: 4.2rem;
+      }
+    }
+  } */
+
+
+.hh{
+    margin-top: 1rem;
+}
+
 hr{
     border: 0.001rem solid #8f8f8f;
     margin-top: 10rem;
@@ -45,10 +92,11 @@ hr{
 }
 
 .wrapper{
-    display: flex ;
+    /* display: flex ; */
+    display: grid;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    /* flex-direction: column;   */
     position: relative;
     margin-left: 66rem;
     margin-top: -2rem;

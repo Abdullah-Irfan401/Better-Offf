@@ -7,8 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 
-import Styles from "./ThirdSection.module.css"
 import { useRef } from "react";
+import Styles from "./ThirdSection.module.css"
 
 
 function ThirdSection() {
@@ -16,6 +16,7 @@ function ThirdSection() {
     const work = useRef()
     const premium = useRef()
     const video = useRef()
+    const main = useRef()
 
 
 
@@ -35,8 +36,10 @@ function ThirdSection() {
 
     useGSAP(() => {
         gsap.to( video.current, {
-            scale: 2.6,
-            y: "50rem",
+            // scale: 2.6,
+            width:"95%",
+            height: "80%",
+            y: "35rem",
             x: "-3rem",
             pin: true,
             // ease: "power3.inOut",
@@ -52,8 +55,23 @@ function ThirdSection() {
         });
     });
 
+    useGSAP(() => {
+        gsap.to( main.current, {
+            y :-1000,
+            // pin: true,
+            
+            scrollTrigger:{
+                // markers: true,
+                trigger: main.current,
+                scrub: 1,  
+                start: "top 650rem",
+            }
+            
+        });
+    });
+
     return (
-        <div className={Styles.main}  >
+        <div className={Styles.main} ref={main}  >
             <div className={Styles.bo_02} >
                 <h4>● PROJECTS</h4>
                 <h4>(BO® — 02)</h4>

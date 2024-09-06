@@ -1,7 +1,12 @@
+@font-face {
+  font-family: pp;
+  src: url(../sections/PPNeueMontreal-Book.otf);
+}
+
 .expandableSection {
-    border-top: 1px solid #4a4a4a;
-    border-bottom: 1px solid #4a4a4a;
-    padding: 10px 0;
+    border-top: .1rem solid #4a4a4a;
+    border-bottom: .1rem solid #4a4a4a;
+    padding: 1rem 0;
     color: white;
   }
   
@@ -14,35 +19,37 @@
   
   .number {
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 1rem;
   }
   
   .title {
     flex: 1;
+    font-family: pp;
   }
   
   .toggleIcon {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
   
   .content {
-    margin-top: 15px;
+    margin-top: 1.5rem;
+    color: #949690;
   }
   
   .content p {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: .5rem;
   }
   
   .tags span {
-    background-color: #4a4a4a;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
+    background-color: #353535;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: #FFFFFF;
   }
   
