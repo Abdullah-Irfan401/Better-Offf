@@ -19,13 +19,14 @@ function FourthSection() {
 
     useGSAP(() => {
         gsap.to( main.current, {
-            y :-1000,
+            y :-450,
             pin: true,
             scrollTrigger:{
                 // markers: true,
                 trigger: main.current,
                 scrub: 1,  
                 start: "top 650rem",
+                end: "top 1rem",
             }
             
         });

@@ -9,8 +9,10 @@
 }
 
 .main{
+    position: relative;
     background-color: #E5E7DF;
-    margin-top: -50rem;
+    /* margin-top: -20rem; */
+    z-index: 70;
 }
 
 

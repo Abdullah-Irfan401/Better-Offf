@@ -27,13 +27,13 @@ function ThirdSection() {
                 trigger: work.current,
                 scrub: 1,
                 // markers: true,   
-                start: "top 200rem",
-                end: "bottom 200rem"
+                start: "top 450rem",
+                end: "bottom 650rem"
             }
             
         });
     });
-
+    
     useGSAP(() => {
         gsap.to( video.current, {
             // scale: 2.6,
@@ -44,11 +44,11 @@ function ThirdSection() {
             pin: true,
             // ease: "power3.inOut",
             scrollTrigger:{
-                // markers: true,
                 trigger: work.current,
                 scrub: 1,
-                // markers: true,   
-                start: "topm 200rem",
+                // markers: true,
+                start: "top 450rem",
+                end: "bottom 450rem"
                 // pin: true
             }
             
@@ -58,7 +58,7 @@ function ThirdSection() {
     useGSAP(() => {
         gsap.to( main.current, {
             y :-1000,
-            // pin: true,
+            pin: true,
             
             scrollTrigger:{
                 // markers: true,
@@ -85,7 +85,7 @@ function ThirdSection() {
                 
             </div>
             <div className={Styles.video}  >
-                <video src="/video.mp4" autoPlay loop muted ref={video} ></video>
+                <video src="/video.mp4"  ref={video} ></video>
             
             </div>
 

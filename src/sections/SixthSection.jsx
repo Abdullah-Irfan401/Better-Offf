@@ -19,10 +19,10 @@ function SixthSection() {
     
     useGSAP(() => {
         gsap.to( main.current, {
-            y :-900,
-            pin: true,
+            y :-600,
+            // pin: true,
             scrollTrigger:{
-                markers: true,
+                // markers: true,
                 trigger: main.current,
                 scrub: 1,  
                 start: "top 750rem",
