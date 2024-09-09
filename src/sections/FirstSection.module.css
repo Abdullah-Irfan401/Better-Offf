@@ -242,16 +242,41 @@
     margin-left: 45rem;
   }
 }
-@media (max-width: 400px) {
-  html {
-    font-size: 30%;
+@media (max-width: 450px ) {
+  .subscribe {
+    display: flex;
+    position: absolute;
+    margin-top: -90rem;
   }
+  
+  .subscribe h1 {
+    font-size: 30rem;
+    color: #1e1e1e;
+    font-family: subscribe;
+    cursor: default;
+  }
+  
+  .subscribe img {
+    width: 26.5rem;
+    height: 19rem;
+    margin-top: 23rem;
+    cursor: default;
+  }
+
   .heading {
-    margin-left: 55rem;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+  /* position: relative; */
+  
+  margin-left: 0rem;
+  margin-top: -28rem;
+  /* height: 20rem;
+  width: 55rem; */
+  font-size: 3rem;
+  color: #1e1e1e;
+  font-family: PPNeueMontreal;
 }
-@media (max-width: 360px) {
-  html {
-    font-size: 25%;
-  }
 }
+

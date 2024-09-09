@@ -31,12 +31,12 @@
     
     transform: scaleX(1);
     transform-origin: bottom left;
+    border-bottom: darkturquoise; 
     
-    .customButton{
+    
       
-      border-bottom: 3.5px solid #bfff00; 
-    }
-
+      
+  
   }
 
   

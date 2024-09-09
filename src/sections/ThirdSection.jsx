@@ -85,7 +85,7 @@ function ThirdSection() {
                 
             </div>
             <div className={Styles.video}  >
-                <video src="/video.mp4"  ref={video} ></video>
+                <video src="/video.mp4" autoPlay loop muted  ref={video} ></video>
             
             </div>
 

@@ -49,7 +49,7 @@
     align-items: center;
     border: 1px solid #444;
     cursor: pointer;
-    text-decoration: none; /* Remove underline on anchor */
+    text-decoration: none; 
     transition: all 0.3s ease;
   }
   
@@ -58,11 +58,18 @@
   }
   
   .box img {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     margin-top: 00rem;
   }
   
+  
+  .box:hover img {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 00rem;
+    transition: all 0.3s ease-in-out;
+  }
 
 
 
