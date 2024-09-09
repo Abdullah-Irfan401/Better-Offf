@@ -1,15 +1,19 @@
-/* main{
+main{
     height: 100%;
     width: 100%;
-    background-color: aqua;
-} */
+    position: relative;
+    
+}
 
 .main img{
-   
-    height: 110%;
+    /* position: absolute;  */
+    position: relative;
+    height: 100%;
     width: 100%;
-    margin-top: -110rem;
-    padding-bottom:20rem;
+    margin-top: -11110rem;
+    /* padding-bottom: 40rem; */
+    /* padding-top: 20rem; */
+    z-index: -999;
 }
 
 h1 {
