@@ -12,11 +12,14 @@ import Styles from "./ThirdSection.module.css"
 
 
 function ThirdSection() {
-
+    
     const work = useRef()
     const premium = useRef()
     const video = useRef()
     const main = useRef()
+    const cursorRef = useRef(); 
+
+
 
 
 
@@ -70,6 +73,35 @@ function ThirdSection() {
         });
     });
 
+    // useGSAP(() => {
+    //     gsap.to( cursor.current, {
+    //         x: 400,
+    //         y: 100,
+    //     });
+    // });
+
+
+    useGSAP(() => {
+        const handleMouseMove = (event) => {
+            const { clientX, clientY } = event;
+
+           
+            gsap.to(cursorRef.current, {
+                x: clientX,
+                y: clientY,
+                duration: 0.2, 
+                ease: "power2.out",
+            });
+        };
+
+        
+        window.addEventListener("mousemove", handleMouseMove);
+
+        
+        
+    }, []);
+    
+
     return (
         <div className={Styles.main} ref={main}  >
             <div className={Styles.bo_02} >
@@ -80,10 +112,16 @@ function ThirdSection() {
             <div className={Styles.text} ref={premium} >
                 <h1>PREMIUM</h1>
             </div>
-            <div  className={Styles.work} ref={work} >
+            <div  className={Styles.work} ref={work} >  
                 <h1>WO</h1>  <h1>RK</h1>
                 
             </div>
+
+            <div className={Styles.cursor} ref={cursorRef} >
+                <p>See All(5)</p>
+                <img src="https://www.datocms-assets.com/106915/1717687183-betteroffstudio_work-loop_11.jpg?auto=format%2Ccompress&fit=max&h=800&w=800" alt="" />
+            </div>
+
             <div className={Styles.video}  >
                 <video src="/video.mp4" autoPlay loop muted  ref={video} ></video>
             

@@ -33,7 +33,7 @@ function ImgSection() {
     return (
         <div className={Styles.main} >
             {/* <h1>vebfs </h1> */}
-            <img src="./public/Sectionimg.avif" alt=""   ref={main} />  
+            <img src="./Sectionimg.avif" alt=""   ref={main} />  
         </div>
     )
 }
