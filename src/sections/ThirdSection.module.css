@@ -9,6 +9,37 @@
     src: url(./founders-grotesk-x.cd2d353.woff2);
 }
 
+.cursor{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    /* text-align: left; */
+    width: 20rem;
+    height: 7rem;
+    /* background-color: rgb(255, 208, 0); */
+    background-color: white;
+    border-radius: 1rem;
+    z-index: 10  ;
+}
+
+.cursor img{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    margin-left: -14rem;
+    border-radius: 1rem;
+
+}
+.cursor p{
+    font-size: 2.6rem;
+    margin-left: 4rem;
+    font-family: pp;
+}
+
+
+
 .main{
     background: white;
     overflow: hidden; 

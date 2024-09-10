@@ -45,7 +45,7 @@ function SixthSection() {
                 <p className={Styles.no_fluff}>NO FLUFF</p>
             </div>
                 <div className={Styles.parent_image} >
-                    <div className={Styles.image} ><img src="./public/fluffimg.avif" alt="" /></div>
+                    <div className={Styles.image} ><img src="./fluffimg.avif" alt="" /></div>
                 </div>
                 
         </div>
