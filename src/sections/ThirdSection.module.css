@@ -10,11 +10,12 @@
 }
 
 .cursor{
-    position: absolute;
+    pointer-events: none;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%);     */
     /* text-align: left; */
     width: 20rem;
     height: 7rem;
@@ -28,13 +29,15 @@
     position: absolute;
     width: 5rem;
     height: 5rem;
-    margin-left: -14rem;
+    margin-top: -4rem;
+    margin-left: 1rem;
     border-radius: 1rem;
 
 }
 .cursor p{
     font-size: 2.6rem;
-    margin-left: 4rem;
+    margin-left: 8rem;
+    margin-top: 1.7rem ;
     font-family: pp;
 }
 
@@ -90,32 +93,17 @@ h2{
     display: flex;
     justify-content: center;
     z-index: 10;
+    /* background-color: blue; */
 }
  .video video {
     /* width: 40rem; */
     height: 25rem;
     margin-left: 7rem;   
     margin-top: -33.3rem;
-    /* padding-bottom: 30rem; */
+    /* padding-bottom: 60rem; */
+    /* z-index: 9; */
 }
 
-/* .bo_02 h5::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    border-radius: 5px;
-    height: 0.05em;
-    bottom: 0;
-    left: 0;
-    background: currentcolor;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-.bo_02 h5:hover::after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-} */
 
 
 

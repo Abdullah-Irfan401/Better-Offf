@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Styles from "./ThirdSection.module.css"
 
 
@@ -18,6 +18,8 @@ function ThirdSection() {
     const video = useRef()
     const main = useRef()
     const cursorRef = useRef(); 
+
+    const [isCursorVisible, setIsCursorVisible] = useState(false);
 
 
 
@@ -60,7 +62,7 @@ function ThirdSection() {
 
     useGSAP(() => {
         gsap.to( main.current, {
-            y :-1000,
+            y :-700,
             pin: true,
             
             scrollTrigger:{
@@ -86,20 +88,30 @@ function ThirdSection() {
             const { clientX, clientY } = event;
 
            
-            gsap.to(cursorRef.current, {
-                x: clientX,
-                y: clientY,
-                duration: 0.2, 
-                ease: "power2.out",
-            });
+            if (isCursorVisible) {
+                // gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 })
+                gsap.to(cursorRef.current, {
+                    x: clientX,
+                    y: clientY,
+                    duration: 0.2,
+                    ease: "power2.out",
+                });
+            }
         };
 
+
         
+        // const video = document.getElementsByClassName(".Video")
+        // video.addEventListener("mousemove", handleMouseMove);
+
         window.addEventListener("mousemove", handleMouseMove);
 
         
         
-    }, []);
+    }, [isCursorVisible]);
+
+    const showCursor = () => setIsCursorVisible(true);
+    const hideCursor = () => setIsCursorVisible(false);
     
 
     return (
@@ -117,14 +129,13 @@ function ThirdSection() {
                 
             </div>
 
-            <div className={Styles.cursor} ref={cursorRef} >
+            <div className={Styles.cursor} ref={cursorRef}  style={{ display: isCursorVisible ? "block" : "none" }} >
                 <p>See All(5)</p>
                 <img src="https://www.datocms-assets.com/106915/1717687183-betteroffstudio_work-loop_11.jpg?auto=format%2Ccompress&fit=max&h=800&w=800" alt="" />
             </div>
 
             <div className={Styles.video}  >
-                <video src="/video.mp4" autoPlay loop muted  ref={video} ></video>
-            
+              <video className={Styles.Video} src="/video.mp4" autoPlay loop muted ref={video}    onMouseEnter={showCursor}   onMouseLeave={hideCursor}   ></video>                    
             </div>
 
             {/* <h1 className={Styles.csdsvd}> dskhjl</h1> */}

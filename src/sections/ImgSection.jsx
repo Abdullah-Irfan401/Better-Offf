@@ -18,13 +18,13 @@ function ImgSection() {
     
     useGSAP(() => {
         gsap.to( main.current, {
-            y : 150,
+            y : -250,
             // pin: true,
             scrollTrigger:{
                 // markers: true,
                 trigger: main.current,
                 scrub: 1,  
-                start: "top 350rem",
+                start: "top 650rem",
             }
             
         });

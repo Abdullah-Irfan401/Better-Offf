@@ -1,32 +1,25 @@
-import NavBar from "./components/NavBar"
-import FirstSection from "./sections/FirstSection"
-import SecondSection from "./sections/SecondSection"
-import ThirdSection from "./sections/ThirdSection"
-import FourthSection from "./sections/FourthSection"
-import ImgSection from "./sections/ImgSection"
-import SixthSection from "./sections/SixthSection"
+import NavBar from "./components/NavBar";
+import FirstSection from "./sections/FirstSection";
+import SecondSection from "./sections/SecondSection";
+import ThirdSection from "./sections/ThirdSection";
+import FourthSection from "./sections/Fourthsection";
+import ImgSection from "./sections/ImgSection";
+import SixthSection from "./sections/SixthSection";
 // import FifthSection from "./sections/FifthSection"
 
-
-
 function App() {
-
-
   return (
     <div>
       <NavBar />
-      <FirstSection  />  
+      <FirstSection />
       <SecondSection />
-      <ThirdSection />  
-      <FourthSection /> 
-      <ImgSection /> 
+      <ThirdSection />
+      <FourthSection />
+      <ImgSection />
       <SixthSection />
       {/* <FifthSection /> */}
     </div>
-  )
+  );
 }
 
-export default App
-
-
-      
+export default App;

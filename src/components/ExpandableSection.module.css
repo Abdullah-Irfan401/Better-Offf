@@ -1,12 +1,12 @@
 @font-face {
   font-family: pp;
-  src: url(../sections/PPNeueMontreal-Book.otf);
+  src: url(./PPNeueMontreal-Book.otf);
 }
 
 .expandableSection {
     border-top: .1rem solid #4a4a4a;
     border-bottom: .1rem solid #4a4a4a;
-    padding: 1rem 0;
+    padding: 1.5rem 0rem;
     color: white;
   }
   
@@ -24,16 +24,19 @@
   
   .title {
     flex: 1;
+    padding-left: 6rem;
     font-family: pp;
   }
   
   .toggleIcon {
-    font-size: 2.4rem;
+    font-size: 4.4rem;
   }
   
   .content {
     margin-top: 1.5rem;
     color: #949690;
+    padding-left: 7.7rem;
+    font-family: pp;
   }
   
   .content p {
